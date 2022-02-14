@@ -2,6 +2,12 @@
 
 
 {% block content %}
-{{todos}}
+<h2 style="color:red">ToDo List</h2>
+<hr>
+<ul>
+{% for todo in todos  %}
+<li>{{todo}}</li>
+{% endfor %}
+</ul>
 
 {% endblock content %}
